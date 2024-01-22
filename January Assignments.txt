@@ -1,0 +1,147 @@
+1)Addition of Two Numbers:
+Write a C program to take two numbers as input and print their sum.
+ANSWER: 
+#include<stdio.h>
+int main(){
+    int a,b;
+    printf("Pls enter the integer values of A & B to perform addition : ");
+    scanf("%d %d",&a,&b);
+    int c=a+b;
+    printf("The SUM of A+B is %d ",c);
+    return 0;
+}
+________________________________________________________________________
+
+2)Palindrome Number:
+Create a C program to check whether a given number is a palindrome or not.
+ANSWER
+#include<stdio.h>
+int main(){
+    int num=421124;
+    int rem,sum=0;
+    int temp=num;
+    while(num>0)
+    {
+        rem=num%10;
+        sum=sum*10+rem;
+        num=num/10;
+    }
+    if(temp == sum)
+    {
+        printf("GIVEN number is Pallindrom");
+    }
+    else {
+        printf("Given number is NOT Pallindrom");
+    }
+    return 0;
+}
+____________________________________________________________________________________
+
+3)Armstrong Number:
+Write a C function to determine if a given number is an Armstrong number or not.
+ANSWER
+#include<stdio.h>
+int main(){
+    int num=407;
+    int rem,sum=0;
+    int temp=num;
+    while(num>0){
+        rem=num%10;
+        sum=sum+rem*rem*rem;
+        num=num/10;
+    }
+    printf("%d",sum);
+    if(temp==sum){
+        printf("Given number is ARMSTRONG ");
+    }
+    else {
+        printf("Given number is NOT ARMSTRONG ");
+    }
+    return 0;
+}
+__________________________________________________________________________________
+
+5)Voter ID:
+Create a C program to check the eligibility of a person to vote based on their age.
+ANSWER: 
+#include<stdio.h>
+int main(){
+    int a;
+    printf("Enter your Age (in Years) : ");
+    scanf("%d",&a);
+    if(a>=18){printf("Since your age is %d , You Are ELIGIBLE to cast your Vote",a);}
+    else{printf("Watch Chota Bheem. You are Not ELIGIBLE to Cast Vote");}
+    return 0;
+}
+__________________________________________________________________________________________
+
+6)Gender Check:
+Write a C program to accept a character (m/f) and print "Male" or "Female" accordingly.
+ANSWER: 
+#include<stdio.h>
+int main(){
+    char z;
+    printf("Pls enter the Character to Check Gender (f/m) :");
+    scanf("%c",&z);
+    if(z=='f'||z=='F'){printf("FEMALE");}
+    else if(z=='m'||z=='M'){printf("MALE");}
+    else{printf("INVALID Character");}
+    return 0;
+}
+_______________________________________________________________________________________
+
+8)Factorial:
+Write a C program to calculate the factorial of a given number using a function.
+ANSWER
+#include<stdio.h>
+int fact(int n){return n*fact(n-1);}
+int main(){
+    int num;
+    printf("Enter the Number to ger the Factorial \n");
+    scanf("%d",&num);
+    int factorial=fact(num);
+    printf("Factrial of given number is %d ",factorial);
+    return 0;
+}
+___________________________________________________________________________________
+9)
+Pattern Printing:
+Design a C program to print the following pattern:
+****
+*
+*
+****
+ANSWER:
+#include<stdio.h>
+int main(){
+    int rows=4;
+    for(int i=1;i<=rows;i++){
+        for(int j=1;j<=rows;j++){
+            if(i==1 ||i==4|| j==1){printf("*");}
+            else{printf(" ");}
+        }
+        printf("\n");
+    }
+    return 0;
+}
+___________________________________________________________________________________
+
+
+10)
+Function Addition:
+Create a C program that adds two numbers using a function with arguments and return value.
+ANSWER
+#include<stdio.h>
+//funtcion Decleare
+int sum(int a, int b){return a+b;}
+int main(){
+    int a,b;
+    printf("Enter the Integer Values of A and B : \n");
+    scanf("%d %d",&a,&b);
+    int c=sum(a,b);
+    printf("The SUM of A and B is %d ",c);
+    
+    return 0;
+}
+____________________________________________________________________________________________
+END
