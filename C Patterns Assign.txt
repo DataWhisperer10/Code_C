@@ -1,0 +1,172 @@
+*
+**
+***
+****
+*****
+#include<stdio.h>
+int main(){
+    for(int i=1;i<=5;i++){
+        for(int j=1;j<=i;j++){
+            printf("*");
+        }
+        printf("\n");
+    }
+    return 0;
+}
+________________________________
+****
+***
+**
+*
+#include<stdio.h>
+int main(){
+    for(int i=1;i<=4;i++){
+        for(int j=4;j>=i;j--){
+            printf("*");
+        }
+        printf("\n");
+    }return 0;
+}
+_____________________________
+*
+**
+***
+***
+**
+*
+#include<stdio.h>
+int main(){
+    for(int i=1;i<=3;i++){
+        for(int j=1;j<=i;j++){
+            printf("*");
+        }
+        printf("\n");
+    }
+    for(int i=1;i<=3;i++){
+        for(int j=3;j>=i;j--){
+            printf("*");
+        }
+        printf("\n");
+    }
+return 0;}
+___________________________________________
+*
+**
+***
+**
+*
+#include<stdio.h>
+int main(){
+    for(int i=1;i<=3;i++){
+        for(int j=1;j<=i;j++){
+            printf("*");
+        }
+        printf("\n");
+    }
+    for(int i=1;i<=2;i++){
+        for(int j=2;j>=i;j--){
+            printf("*");
+        }
+        printf("\n");
+    }
+    
+    return 0;
+}
+_______________________________________________
+1
+12
+123
+1234
+12345
+#include<stdio.h>
+int main(){
+    for(int i=1;i<=5;i++){
+        for(int j=1;j<=i;j++){
+            printf("%d",j);
+        }
+        printf("\n");
+    }return 0;
+}
+______________________________________________
+1
+22
+333
+4444
+55555
+#include<stdio.h>
+int main(){
+    for(int i=1;i<=5;i++){
+        for(int j=1;j<=i;j++){
+            printf("%d",i);
+        }
+        printf("\n");
+    }
+    return 0;
+}
+_______________________________________________
+
+1
+2 3 
+4 5 6 
+7 8 9 10 
+#include<stdio.h>
+int main(){
+    int n=4;
+    int count=1;
+    for(int i=1;i<=4;i++){
+        for(int j=1;j<=i;j++){
+            printf("%d ",count);
+            count++;
+        }
+        printf("\n");
+    }
+    return 0;
+}
+___________________________________________
+****
+****
+****
+****
+#include<stdio.h>
+int main(){
+    for(int i=1;i<=4;i++){
+        for(int j=1;j<=4;j++){
+            printf("*");
+        }
+        printf("\n");
+    }
+    return 0;
+}
+____________________________________________
+1 2 3 4 
+1 2 3 4 
+1 2 3 4 
+1 2 3 4 
+#include<stdio.h>
+int main(){
+    int n=4;
+    for(int i=1;i<=n;i++){
+        for(int j=1;j<=n;j++){
+            printf("%d ",j);
+        }
+        printf("\n");
+    }
+    return 0;
+}
+______________________________________________
+1 1 1 1 
+2 2 2 2 
+3 3 3 3 
+4 4 4 4
+#include<stdio.h>
+int main(){
+    int n=4;
+    for(int i=1;i<=n;i++){
+        for(int j=1;j<=n;j++){
+            printf("%d",j);
+        }
+        printf("\n");
+    }
+    return 0;
+}
+_____________________________________________
